@@ -310,7 +310,7 @@ body::-webkit-scrollbar-thumb:hover {
   inset: 0;
   width: 162px;
   height: 162px;
-  animation: spin-stamp 18s linear infinite;
+  animation: spin-stamp 28s linear infinite;
   transform-origin: center center;
 }
 
