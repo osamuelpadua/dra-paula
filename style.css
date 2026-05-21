@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo {
-  height: 64px;
+  height: 86px;
   width: auto;
   display: block;
 }
@@ -722,7 +722,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 480px) {
   .hero-inner { padding: 0 24px; }
 
-  .logo { height: 52px; }
+  .logo { height: 70px; }
 
   .hero-left {
     padding-top: 24px;
@@ -1790,7 +1790,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact-logo {
-  height: 64px;
+  height: 86px;
   width: auto;
   max-width: 100%;
   display: block;
@@ -1850,7 +1850,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .contact-logo {
-    height: 52px;
+    height: 70px;
     width: auto;
   }
 
@@ -2124,7 +2124,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .contact-logo {
-    height: 48px;
+    height: 65px;
     margin: 0 auto;
   }
 
@@ -2139,7 +2139,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 480px) {
   .logo {
-    height: 48px;
+    height: 65px;
   }
 
   .hero-left {
