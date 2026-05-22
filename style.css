@@ -1260,7 +1260,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ===== PROFILE BLOCK ===== */
 .profile-block {
-  background: var(--white);
+  background: #F5F5F5;
   padding: 104px 0 112px;
 }
 
