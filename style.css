@@ -699,104 +699,90 @@ body::-webkit-scrollbar-thumb:hover {
   .hero-inner { padding: 0 32px; }
 
   .hero-content {
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0;
     padding-bottom: 0;
   }
 
   .hero-left {
-    flex: 0 0 57%;
-    width: 57%;
-    max-width: none;
+    flex: none;
+    width: 100%;
+    max-width: 560px;
     padding-bottom: 40px;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 32px;
-    z-index: 3;
   }
 
-  .hero-left h1 { font-size: 38px; }
+  .hero-left h1 { font-size: 46px; }
 
   .subtext { font-size: 15px; max-width: 100%; }
 
-  .btn-cta {
-    align-self: flex-start;
-    height: 56px;
-    padding: 0 24px;
-    font-size: 13px;
-  }
-
-  /* Foto lateral direita — mostra cabeça + tronco completo */
+  /* Ancora pelo topo — mostra cabeça + torso, pés cortam embaixo */
   .hero-right {
-    flex: 1;
-    height: auto;
-    align-self: stretch;
-    position: relative;
+    width: 100%;
+    height: 400px;
+    align-self: auto;
+    justify-content: center;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: 16px;
   }
 
   .doctor-img {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    transform: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 480px;
   }
 
-  .stamp-wrapper { top: 16px; right: 8px; width: 110px; height: 110px; }
+  .stamp-wrapper { top: 220px; right: 16px; width: 110px; height: 110px; }
   .stamp-txt    { width: 110px; height: 110px; }
   .stamp-iso    { width: 80px; height: 80px; }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-  .hero-inner { padding: 0 20px; }
+  .hero-inner { padding: 0 24px; }
 
   .logo { height: 70px; }
 
   .hero-left {
-    flex: 0 0 58%;
-    width: 58%;
-    padding-top: 20px;
-    padding-bottom: 28px;
+    padding-top: 24px;
+    padding-bottom: 36px;
   }
 
-  .hero-left h1 { font-size: 26px; }
+  .hero-left h1 { font-size: 36px; }
 
-  .subtext { font-size: 12px; }
+  .subtext { font-size: 14px; }
 
   .btn-cta {
-    align-self: flex-start;
-    height: 48px;
-    padding: 0 16px;
-    font-size: 11px;
-    letter-spacing: 0.09em;
+    height: 60px;
+    padding: 0 24px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    align-self: stretch;
+    justify-content: center;
+    text-align: center;
   }
 
-  /* Foto lateral direita — mostra cabeça + tronco completo */
+  /* Ancora pelo topo — mostra cabeça + torso */
   .hero-right {
-    flex: 1;
-    height: auto;
+    height: 320px;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: 12px;
   }
 
   .doctor-img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    transform: none;
+    top: 0;
+    bottom: auto;
+    height: 380px;
+    transform: translateX(-50%);
   }
 
-  .stamp-wrapper { width: 80px; height: 80px; top: 12px; bottom: auto; right: 4px; }
-  .stamp-txt    { width: 80px; height: 80px; }
-  .stamp-iso    { width: 58px; height: 58px; }
+  .stamp-wrapper { width: 86px; height: 86px; top: 30px; bottom: auto; right: 12px; }
+  .stamp-txt    { width: 86px; height: 86px; }
+  .stamp-iso    { width: 64px; height: 64px; }
 
   .whatsapp-float { bottom: 20px; right: 20px; width: 60px; height: 60px; }
 }
