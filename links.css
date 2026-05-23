@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 44px;
+  gap: 32px;
 }
 
 /* ===== HEADER ===== */
@@ -110,10 +110,20 @@
 }
 
 .lk-name {
-  font-size: 18px;
-  font-weight: 700;
-  color: #021A40;
-  letter-spacing: 0.01em;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1A3F6E;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.lk-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6F7C8A;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .lk-specialty {
@@ -147,9 +157,10 @@
   transition: background 0.22s, transform 0.22s, box-shadow 0.22s, border-color 0.22s;
 }
 
-.lk-card:nth-child(1) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards, cta-gradient 10s linear 0.73s infinite; }
+.lk-card:nth-child(1) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards; }
 .lk-card:nth-child(2) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.28s forwards; }
 .lk-card:nth-child(3) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.38s forwards; }
+.lk-card:nth-child(4) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.48s forwards; }
 
 .lk-card:hover {
   background: #f0f7fc;
@@ -187,6 +198,46 @@
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 14px 44px rgba(36, 99, 142, 0.32);
   border-color: transparent;
+}
+
+/* Secondary card (Consulta Presencial) */
+.lk-card--secondary {
+  background: linear-gradient(135deg, #1E4D6E, #24638E, #1A3F5C, #24638E, #1E4D6E);
+  background-size: 400% 400%;
+  border-color: transparent;
+  box-shadow: 0 6px 28px rgba(20, 50, 80, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.lk-card--secondary:hover {
+  background: linear-gradient(135deg, #285F84, #1E4D6E, #123350, #1E4D6E, #285F84);
+  background-size: 400% 400%;
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 14px 44px rgba(20, 50, 80, 0.34);
+  border-color: transparent;
+}
+
+.lk-card--secondary .lk-card-title,
+.lk-card--secondary .lk-card-desc {
+  color: #ffffff;
+}
+
+.lk-card--secondary .lk-card-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lk-card--secondary .lk-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.lk-card--secondary .lk-arrow svg path {
+  stroke: rgba(255, 255, 255, 0.7);
+}
+
+.lk-card--secondary:hover .lk-arrow svg path {
+  stroke: #ffffff;
 }
 
 /* Icon circle */
